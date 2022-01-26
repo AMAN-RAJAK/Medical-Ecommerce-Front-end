@@ -1,0 +1,140 @@
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+    background-color: whitesmoke;
+    
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+html
+{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+.header a
+{
+    font-size: 2rem;
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 6px;
+    color: teal;
+    text-decoration: none;
+}
+.header
+{
+    margin-left:0;
+    padding:0;
+}
+.order 
+{
+    text-align: center;
+    padding: 10px;
+}
+.payment-options .card-payments
+{
+    background-color: gainsboro;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+}
+.payment-options .card-payments form
+{
+  padding: 20px;
+  color: gray;
+ 
+}
+.payment-options .card-payments form div
+{
+    padding: 6px;
+}
+.payment-options .card-payments form div button
+{
+    padding: 8px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+.payment-options .choose, .cure-pay, .credit, .cash
+{
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(42, 250, 163); 
+}
+.payment-options .choose, .cure-pay, .credit, .cash p
+{
+    padding: 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px; 
+}
+#c1
+{
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.payment-options #tog
+{
+    display: none;
+}
+#usnm
+{
+    width: 60%;
+}
+#cardnm,#cardnm1,#cardnm2
+{
+    width: 15%;
+}
+#expd
+{
+    width: 10%;
+}
+
+@media screen and (max-width: 600px)
+{
+
+    .header a
+    {
+        font-size: 1.2rem;
+    }
+
+   .order
+   {
+       font-size: .7rem;
+   }
+   img
+   {
+       width: 200px;
+       height: auto;
+   }
+   .payment-options .choose, .cure-pay, .credit, .cash p
+   {
+       margin-left: 10%;
+       margin-right: 10%;
+   }
+   #c1
+   {
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+   .payment-options .card-payments
+   {
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+}
+.credit:hover
+{
+    background-color: teal;
+}

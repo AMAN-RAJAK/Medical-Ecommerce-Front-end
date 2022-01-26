@@ -1,0 +1,78 @@
+.fields{
+    list-style: none;
+    padding-top: 1rem;
+    padding-left: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+}
+.slider{
+    position: fixed;
+    z-index: 10000;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    width: 0;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+}
+.cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.calender{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: 2px solid black;
+    position: relative;
+    width: 300px;
+    padding: 5px;
+}
+.month{
+    display: flex;
+    justify-content: center;
+}
+.days{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 0.9rem;
+}
+.days li{
+    min-width: 35px;
+    padding: 2px 10px;
+    margin: 2px;
+}
+
+.dates{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    color: #d3d3d3;
+    font-size: 0.7rem;
+}
+.dates li{
+    min-width: 35px;
+    padding: 8px 10px;
+    margin: 2px;
+    
+}
+.s_dates{
+    border-radius: 50%;
+    background-color:#ffc107;
+    cursor: pointer;
+    color: black;
+}
+.fonts{
+    font-weight: 500;
+    font-size: 0.8rem;
+}

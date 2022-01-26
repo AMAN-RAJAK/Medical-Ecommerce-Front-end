@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.specialist{
+    font-size: 1.1rem;
+    border-bottom: 1.4px solid;
+    font-family: 'Roboto', sans-serif;
+    border-image: linear-gradient(to right, red 10%,#ccc 10%);
+    border-image-slice: 1;
+}
+.specialist_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12rem;
+}
+.specialist_list li{
+    background-color: white;
+    position: relative;
+    height: 6rem;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+.specialist_list li .fas{
+    color: white;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.specialist_list li:before{
+    background-color:  #00df94;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.specialist_list li:hover::before{
+    transform: scale(0.8);
+}
+.specialist_list a span{
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.modal_list{
+    list-style: none;
+    padding: 10px;
+}
+.image_div{
+    min-height: 400px;
+}
+#message{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform:translate(-50%,-50%);
+    
+}
+
+
+
+
